@@ -18,6 +18,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: `secret_TV5KGG1nof5LzBIoHzcn82lL3DgYVYypGJBLUNRdJk6`,
+        databaseId: `4c0e1454ca5643af87f82581d74a3eae`,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
       options: {
